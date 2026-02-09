@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be My Valentine 💖</title>
+  <style>
+    body {
+      background: pink;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+    }
+    .box {
+      background: #ffd6e8;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    img {
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1 id="text">Will you be my Valentine? 🥺</h1>
+    <img id="img" src="https://i.imgur.com/6XKQZQp.png">
+    <br>
+    <button onclick="yes()">Yes 💕</button>
+    <button onclick="no()">No 💔</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.getElementById("text").innerText = "YAY!!! 💖🥰";
+      document.getElementById("img").src =
+        "https://i.imgur.com/4M7IWwP.png";
+    }
+
+    function no() {
+      document.getElementById("text").innerText = "I'm crying 😭";
+      document.getElementById("img").src =
+        "https://i.imgur.com/Z6Xc6dK.png";
+    }
+  </script>
+</body>
+</html>
